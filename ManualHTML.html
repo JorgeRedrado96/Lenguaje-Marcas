@@ -1,0 +1,178 @@
+﻿<!doctype html>
+<html lang="es">
+	<head>
+		<title> Manual HTML </title>
+		<meta charset="utf-8">
+		<meta name="author" content="Jorge Redrado">
+	</head>
+	<body>
+		<h1> MANUAL HTML</h1>
+		<h3> Por Jorge Redrado </h3>
+<br>
+<h2><elto id=indice>INDICE</a></h2>
+<ul>
+<li><h4><a href=#empezar>Como empezar un documento HTML</a></h4>
+<li><h4><a href=#titulo>Como crear títulos</a></h4>
+<li><h4><a href=#lista>Como crear listas</a></h4>
+<li><h4><a href=#resaltar>Como resaltar el texto en negrita, bastardilla o subrayada</a></h4>
+<li><h4><a href=#hiperenlace>Como hacer hiperelaces</a></h4>
+<li><h4><a href=#imagen>Como introducir imágenes</a></h4>
+<li><h4><a href=#tabla>Como hacer tablas</a></h4>
+</ul>
+<br><br><br><br><br><br><br><br><br><br>
+<h2><elto id=empezar>-Como empezar un documento HTML</elto></h2>
+<pre>	Para empezar un documento HTML lo primero que debemos saber es que cada elemento que pongamos en el texto va en una etiqueta. Las etiquetas se 
+ponen con los simbolos de mayor y menor que. En la primera etiqueta se debe poner "!doctype html" y cerrar la etiqueta para saber que es un documento
+html. Luego debemos dividir el documento abriendo la etiqueta "html", dentro de esta deben ir 2 etiquetas, la etiqueta "head", y una vez se cierra
+esta, la etiqueta "body".
+	La etiqueta head sirve para poner datos del documento, pero que no seran visibles en el, usando las etiquetas "meta", por ejemplo podemos poner
+el nombre del autor de la pagina abriendo la etiqueta meta y poniendo meta name="author" content="nombre de autor" y cerando la etiqueta. Cuando se pone
+una palabra seguido de el simbolo igual y despues otra palabra entre comillas indica un atributo. En este caso "author" quiere decir el nombre del autor
+del texto.
+	En la etiqueta body ponemos lo que quedara visible en el documento. Se pueden poner imágenes, tablas, o simplemente textos en los que habra cambios
+como por ejemplo texto en negrita, parrafos, hiperenlaces... Siempre debemos abrir y cerrar las etiquetas. Las etiquetas se cierran poniendo la barra "/" 
+dentro de la etiqueta, por ejemplo, para abrir body seria "body" entre simbolos de menor y mayor, y para cerrarlo "/body" entre los simbolos de mayor y
+menor.</pre>
+<br><h5><a href=#indice>Subir al Indice</a></h5>
+<br><br><br><br><br><br><br><br><br><br>
+<h2><elto id=titulo>-Como crear titulos</elto></h2>
+<pre>	Para crear un titulo solo debemos usar la etiqueta "h" Podemos hacer titulos de 6 tamaños distintos. Para seleccionar el tamaño del titulo debemos
+ponerle a la letra "h" en la etiqueta un numero del 1 al 6. Despues de escribir el titulo debemos cerrar la etiqueta. Este seria un ejemplo de como 
+quedarian los 6 titulos distintos.</pre>
+<h1>Titulo uno</h1>
+<h2>Titulo dos</h2>
+<h3>Titulo tres</h3>
+<h4>Titulo cuatro</h4>
+<h5>Titulo cinco</h5>
+<h6>Titulo seis</h6>
+<pre>	Estos son los ejemplos de titulo. En caso de poner un numero mayor que el 6, el titulo se quedaria del mismo tamaño que en el titulo seis.</pre>
+<br><h5><a href=#indice>Subir al Indice</a></h5>
+<br><br><br><br><br><br><br><br><br><br>
+<h2><elto id=lista>-Como crear listas</elto></h2>
+<pre>	Para crear una lsita debemos saber que hay dos tipos de listas. Las listas ordenadas y las listas desordenadas.
+	Las listas ordenadas se separaran generalmente por números, pero añadiendoles un atributo podremos cambiarlo.
+	Las listas desordenadas se separan por puntos, pero tambien podremos cambiarlo con otro atributo.
+	Para empezar una lista debemos poner la etiqueta "ol" para las listas ordenadas, y "ul" para las listas desordenadas. Una vez abierta la etiqueta
+en cada elemento de la lista se debe poner la etiqueta "li". Esta etiqueta no se debe cerrar. Una vez hemos puesto los elementos de lista deseados volvemos
+a cerrar la etiqueta "ol" para las ordenadas, o "ul" para las desordenadas. Vamos a ver un ejemplo de ambas.</pre>
+<ol>
+<li>Elemento ordenado uno
+<li>Elemento ordenado dos
+<li>Elemento ordenado tres
+</ol>
+<br>
+<ul>
+<li>Elemento sin orden uno
+<li>Elemento sin orden dos
+<li>Elemento sin orden tres
+</ul>	
+<pre>	Como vemos la lista ordenada se ha separado en numeros y la que no tiene orden en puntos. Vamos a añadirle un atributo a la lista ordenada para que
+se ordene con numeros romanos. Para ello ponemos en la etiqueta "ol" el atributo type="I".</pre>
+<ol type="I">
+<li>Elemento ordenado uno
+<li>Elemento ordenado dos
+<li>Elemento ordenado tres
+</ol>
+<br>
+<pre>	Por ultimo podemos hacer que empiece por el numero que queramos, por ejemplo vamos a hacer que la lista ordenada empiece por el numero 4. Para ello
+usamos el atributo start=" el numero que queramos ".</pre>
+<br>
+<ol start="4">
+<li>Elemento ordenado cuatro
+<li>Elemento ordenado cinco
+<li>Elemento ordenado seis
+</ol>
+<br><h5><a href=#indice>Subir al Indice</a></h5>
+<br><br><br><br><br><br><br><br><br><br>
+<h2><elto id=resaltar>-Como resaltar el texto</elto></h2>
+<pre>	Para resaltar una palabra o texto en negrita, italica (o bastardilla) o subrayada, debemos usar las etiquetas "i", "b" y "u" respectivamente.
+Debemos abrirlas donde queramos modificar el texto o palabra, y cerrarla para dejar de hacerlo.
+	En esta linea vamos a mostrar un ejemplo de <b>negrita</b>, otro de <i>italica</i>, y por ultimo un ejemplo de <u>subrayada</u>.
+	Tambien podemos <s>mostrar algo irrelevante</s> con la etiqueta "s", abriendo y cerrandola donde queramos que el texto este tachado.
+Podemos <em>recalcar algo</em> del texto con la etiqueta "em", se parece a la italica, pero es distinta. Podemos mostrar algo de texto en letra
+<strong>grande</strong> para señalar algo importante, serio o urgente, con la etiqueta "strong", y por ultimo mostrar algo en <small>pequeño</small>
+con la etiqueta "small". Esto sirve para representar por ejemplo la letra pequeña de un contrato. La etiqueta small se diferencia poco, pero para 
+mostrarlo mejor voy a usar dos ejemplos.
+	<small>MAYUSCULAS EN PEQUEÑO</small>
+	MAYUSCULAS NORMALES
+	<small> minusculas en pequeño</small>
+	minusculas normales</pre>
+<br><h5><a href=#indice>Subir al Indice</a></h5>
+<br><br><br><br><br><br><br><br><br><br>
+<h2><elto id=hiperenlace>-Como hacer hiperenlaces</elto></h2>
+<pre>	Como habras visto ya se pueden hacer hiperenlaces. Podemos hacer elaces una pagina en internet, un sitio del documento e incluso a otro
+documento externo.
+	Para hacer un enlace a pagina de internet debemos usar la etiqueta "a" con el atributo "href="pagina de internet". Por ejemplo vamos a
+hacer un enlace a la pagina web del instituto. Abrimos la etiquta "a" con el atributo "href" escribimos una palabra o texto donde estara el
+enlace, y cerramos la etiqueta "a", por ejemplo:  <a href="http://www.iessantiagohernandez.com/">Ir a la pagina del instituto</a>
+	Si quisieramos hacer un enlace a otro documento externo deberiamos usar la etiqueta "a" con el atributo "name="direccion documento externo".
+	Por ultimo para hacer un enlace a una parte del documento en el que estamo debemos crear un elemento en el lugar dodne queramos ir
+poniendo la etiqueta "elto id=nombre elemento" en un lugar del texto. Luego debemos usar "a href=#nombre elemento" y escribir algo, como por ejemplo
+<a href=#indice>Click aqui para ir al indice.</a> Recuerda siempre cerrar la etiqueta "a" y la etiqueta "elto". 
+	También podemos hacer enlaces clickando, por ejemplo, en una imagen. Lo veremos a continuacion en el apartado de añadir imagenes.
+<br><h5><a href=#indice>Subir al Indice</a></h5>
+<br><br><br><br><br><br><br><br><br><br>
+<h2><elto id=imagen>-Como introducir imagenes</elto></h2>
+<pre>	Para introducir una imagen debemos usar la etiqueta "img". Si no añadimos un atributo de altura o anchura, la imagen cogera el tamaño
+ por defecto, pero usando el atributo "width" y "height" podemos modificar el ancho y alto de la imagen. Si solo ponemos 1 de ellos la imagen
+se ensanchara en ambos lados para no deformar la imagen. Podemos poner una imagen que tengamos descargada o otra imagen de internet poniendo
+la url. vamos a poner de ejmplo una imagen de internet, pero vamos a modificar el tamaño ya que es demasiado grande.
+<img src="http://4.bp.blogspot.com/-gZ33ZHfep6E/UY-3q_Id9OI/AAAAAAAAQc4/w4hOv7TAWJM/s1600/Margarita%2B8.JPG", height="100">
+	La imagen se ha modificado solo en la altura, pero ha modificado el tamaño proporcionalmente en la anchrua tambien. Ahora vamos a poner
+otra imagen y modificar ambas cosas para ver como se deforma.
+<img src="http://4.bp.blogspot.com/-gZ33ZHfep6E/UY-3q_Id9OI/AAAAAAAAQc4/w4hOv7TAWJM/s1600/Margarita%2B8.JPG", height="100", width="300">
+	Por ultimo podemos hacer que clicando en un sitio especifico de una imagen nos lleve a un sitio de internet o un documento, es decir, 
+podemos hacer un hiperenlace. Para hacer el hiperenlace debemos usar la etiqueta "img" con el atributo "usemap=#nombre del mapa". Una vez puesta
+la etiqueta "img" debemos poner una etiqueta "map name=#nombre del mapa" y despues de esta otra etiqueta llamada "area" donde seleccionaremos si
+queremos hacer un cuadrado, rectangulo, circulo o cualquier otra figura. Despues daremos las cordenadas separadas por comas, la direccion a donde
+nos llevara al hacer click y el texto que pondra con el raton encima si es un hiperenlace. Son atributos que se ponen en "area". Vamos a hacer un
+ejemplo para la siguiente imagen:
+<img src="http://img.radio.cz/pictures/grafik/geometrie.jpg", usemap="#mapa">
+<map name="mapa">
+<area shape="circle", coords="75,85,45", href="#indice", alt="Al indice del documento">
+<area shape="poly", coords="279,131,330,41,380,131", href="http://www.iessantiagohernandez.com/", alt="A la pagina del instituto">
+<area shape="rect", coords="140,131,250,51", href="#top", alt="Al inicio del documento">
+	Si clicas en el circulo te llevara al Indice del documento, si clicas en el rectangulo te llevara al principio del documento y si clicas 
+en el triangulo te llevara a la pagina web del instituto. Para saber las coordenadas de la imagen copiamos la imagen y la abrimos con un programa
+ de edicion de imagenes, paint por ejemplo, y al poner el rato encima
+te dira en que pixel estas situado. Solo te hara falta poner las coordenadas de los diferentes puntos.</pre>
+<br><h5><a href=#indice>Subir al Indice</a></h5>
+<br><br><br><br><br><br><br><br><br><br>
+<h2><elto id=tabla>-Como hacer tablas</elto></h2>
+<pre>	Por ultimo vamos a ver como hacer tablas en html. Como sabras las tablas se componen de filas (de izquierda a derecha), y de columnas 
+(de arriba a abajo). Debemos usar la etiqueta "table" para iniciar una tabla, la etiqueta "tr" para iniciar una fila, y la etiqueta "td" para
+iniciar una columna. Tambien podemos ponerle un titulo a la tabla con la etiqueta "th". La unica etiqueta que debemos cerrar es la etiqueta
+"table". Podemos ponerle atributos a la tabla, como por ejemplo "border" para que tenga un borde. y a las etiquetas "th" y "td" se les pone
+los atributos "rowspan" para expandir en columna, y "colspan" para expandir en fila. Vamos a hacer una calculadora como ejemplo.
+<br>
+<table border="1">
+<th colspan="3">Calculadora
+<tr><td>7<td>8<td>9
+<tr><td>4<td>5<td>6
+<tr><td>1<td>2<td>3
+<tr><td>0<td>+<td>-
+</table>
+	Para acabar vamos a dibujar el horario de clase para ver como se utiliza bien el "rowspan" y "colspan". Se debe poner cuanto se debe
+de expandir hacia un lado, es decir si quiero que en la fila se expanda 3 huecos sera "rowspan="3""
+<br><br>
+<table border="1">
+<th colspan="6">HORARIO DE CLASE
+<tr><td>Hora<td>Lunes<td>Martes<td>Miercoles<td>Jueves<td>Viernes
+<tr><td>15:00<td>Lenguaje de Marcas<td>Sistemas Operativos<td rowspan="3"><td>Tutoria<td>FOL
+<tr><td>15:50<td>Sistemas Operativos<td>Entornos Desarrollo<td>FOL<td>Bases de Datos
+<tr><td>16:40<td>Sistemas Operativos<td>Programacion<td>Entornos Desarrollo<td>Bases de Datos
+<tr><td>17:30<td colspan="5">Recreo
+<tr><td>17:45<td>Ingles<td>Programacion<td>Bases de Datos<td>Programacion<td>Ingles
+<tr><td>18:35<td>Entornos Desarrollo<td>FOL<td>Bases de Datos<td>Programacion<td>Sistemas Operativos
+<tr><td>19:25<td colspan="5">Recreo
+<tr><td>19:40<td>Programacion<td>Bases de Datos<td>Programacion<td>Lenguaje Marcas<td>Sistemas Operativos
+<tr><td>20:30<td>Programacion<td>Bases de Datos<td>Programacion<td>Lenguaje Marcas<td>
+<tr><td>21:20<td colspan="5">Fin de las clases
+</table>
+</pre>
+
+
+<br><h5><a href=#indice>Subir al Indice</a></h5>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</body>
+</html>
